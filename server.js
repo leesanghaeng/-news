@@ -19,7 +19,7 @@ var app = http.createServer(function (request, response) {
     <body>
 
     <h1>Club News HTML간편 생성기</h1>
-	<p>2024.4.10 : 젠킨스 연동1</p>
+	<p>2024.4.10 : 젠킨스 연동</p>
 	<p>2024.3.28 : 공개 초안 및 의견조회 추가</p>
     	<p>2024.2.24 : 자동호수 계산, 날짜 기능 추가</p>
     <hr>
