@@ -13,7 +13,7 @@ var app = http.createServer(function (request, response) {
     <!doctype html>
     <html>
     <head>
-      <title>Club News HTML생성기(2024.2.24)</title>
+      <title>Club News HTML생성기(2024.4.12)</title>
       <meta charset="utf-8">
     </head>
     <body>
