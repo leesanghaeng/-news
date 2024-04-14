@@ -109,7 +109,7 @@ xhttp.onreadystatechange = function () {
 		jsonfunc(this.responseText); //this = xhttp
 	}
 }
-xhttp.open("GET","http://211.42.155.100:8085//news", true);
+xhttp.open("GET","http://211.42.155.100:8085/news", true);
 
 xhttp.send();
 
@@ -119,7 +119,7 @@ xhttp2.onreadystatechange = function () {
 		jsonfunc2(this.responseText); //this = xhttp
 	}
 }
-xhttp2.open("GET","http://211.42.155.100:8085//news2", true);
+xhttp2.open("GET","http://211.42.155.100:8085/news2", true);
 
 xhttp2.send();
 
@@ -128,7 +128,7 @@ xhttp3.onreadystatechange = function () {
 		jsonfunc3(this.responseText); //this = xhttp
 	}
 }
-xhttp3.open("GET","http://211.42.155.100:8085//notice", true);
+xhttp3.open("GET","http://211.42.155.100:8085/notice", true);
 
 xhttp3.send();
 
@@ -137,7 +137,7 @@ xhttp4.onreadystatechange = function () {
 		jsonfunc4(this.responseText); //this = xhttp
 	}
 }
-xhttp4.open("GET","http://211.42.155.100:8085//ekasb", true);
+xhttp4.open("GET","http://211.42.155.100:8085/ekasb", true);
 
 xhttp4.send();
 
@@ -146,7 +146,7 @@ xhttp5.onreadystatechange = function () {
 		jsonfunc5(this.responseText); //this = xhttp
 	}
 }
-xhttp5.open("GET","http://211.42.155.100:8085//opinion", true);
+xhttp5.open("GET","http://211.42.155.100:8085/opinion", true);
 
 xhttp5.send()
 
