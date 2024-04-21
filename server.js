@@ -46,8 +46,8 @@ var app = http.createServer(function (request, response) {
         <p>공지4 제목<input type="text" name="notice4" placeholder="title" id = "notice4_title" value =""> URL <input type="text" name="notice4_url" placeholder="title" id = "notice4_url" value =""></p>
         
         <hr>
-        <div class="content-div">공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></div>
-        <div class="content-div">공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></div>
+        <div class="content-div" id = "openT1"><input type="text" name="open3n" id="open3n"  value ="1." style="width: 10px;">공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></div>
+        <div class="content-div" id = "openT2"><input type="text" name="open3n" id="open3n"  value ="2." style="width: 10px;">공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></div>
         <div class="content-div" id = "openT3"><input type="text" name="open3n" id="open3n"  value ="3." style="width: 10px;">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)">
 	   <div id="clickableDiv"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제</div> </div>
      
@@ -496,6 +496,8 @@ function jsonfunc5( jsonText5 ) {
       var open1 = post.open1
       var open2 = post.open2
       var open3 = post.open3
+      var open1n = post.open1n
+      var open2n = post.open2n
       var open3n = post.open3n
       var open1_url = post.open1_url
       var open2_url = post.open2_url
@@ -704,14 +706,14 @@ function jsonfunc5( jsonText5 ) {
 																					<table width="285" cellspacing="0" cellpadding="0" height="191">
 																						<tbody>
 																							<tr>
-																								<td width="15" valign="top" style="font-size:12px; color:#555; line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44">1.</td>
+																								<td width="15" valign="top" style="font-size:12px; color:#555; line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44">${open1n}</td>
 																								<td width="270" valign="top" style="line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44"><a href="${open1_url}" style="font-size:12px; text-decoration:none;" target="_blank">
 																										<span style="color:#555;">${open1}<br>${open1_dr}</span>
 																									</a>
 																								</td>
 																							</tr>
 																							<tr>
-																								<td width="15" valign="top" style="font-size:12px; color:#555; line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44">2.</td>
+																								<td width="15" valign="top" style="font-size:12px; color:#555; line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44">${open2n}</td>
 																								<td width="270" valign="top" style="line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44"><a href="${open2_url}" style="font-size:12px; text-decoration:none;" target="_blank">
 																										<span style="color:#555;">${open2}<br>${open2_dr}</span>
 																									</a>
