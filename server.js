@@ -94,8 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // div를 클릭하면 p 태그를 비활성화합니다.
     document.getElementById("clickableDiv").addEventListener("click", function() {
         var paragraphToDisable = document.getElementById("openT3");
-        openT3.disabled = true; // p 태그를 비활성화합니다.
-        openT3.style.color = "gray"; // 비활성화된 텍스트 색상을 변경합니다.
+        openT3.style.display = 'none';// p 태그를 비활성화합니다.
     });
 });
 
