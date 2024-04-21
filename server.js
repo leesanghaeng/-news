@@ -20,7 +20,7 @@ var app = http.createServer(function (request, response) {
 
     <h1>Club News HTML간편 생성기</h1>
         <p>2024.4.14 : 서버이관(라즈베리파이에서 카페24클라우드)
-	<p>2024.4.10 : 젠킨스 연동1</p>
+	<p>2024.4.10 : 젠킨스 연동</p>
 	<p>2024.3.28 : 공개 초안 및 의견조회 추가</p>
     	<p>2024.2.24 : 자동호수 계산, 날짜 기능 추가</p>
     <hr>
@@ -37,7 +37,8 @@ var app = http.createServer(function (request, response) {
         <p>공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></p>
         <p>공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></p>
         <p id = "openT3">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)"> </p>
-        <hr>     
+        <button id="otherButton" onclick="disableElements()">Click to Disable Above Elements</button>
+	<hr>     
 
         <p>회계기준위원회 <br> 일정제목<input type="text" name="kasb_title" placeholder="2023년 제14회 회계기준위원회" > URL <input type="text" name="kasb_title_url" placeholder="title"> 일시 <input type="text" name="ksab_title_date" placeholder="2023년 9월 15일(금)"></p>
         <p>의결안건</p> 
@@ -87,7 +88,10 @@ var app = http.createServer(function (request, response) {
 
 
 <script type="text/javascript">
-
+function disableElements() {
+    // 입력 필드 비활성화
+    document.getElementById('openT3').disabled = true; // 'Disable Input' 버튼 비활성화
+}
 	document.addEventListener('DOMContentLoaded', function () {
     var today = new Date();
     var year = today.getFullYear(); // 년도
