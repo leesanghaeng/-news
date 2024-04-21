@@ -486,6 +486,7 @@ function jsonfunc5( jsonText5 ) {
       var open1 = post.open1
       var open2 = post.open2
       var open3 = post.open3
+      var open3n = post.open3n
       var open1_url = post.open1_url
       var open2_url = post.open2_url
       var open3_url = post.open3_url
@@ -707,7 +708,7 @@ function jsonfunc5( jsonText5 ) {
 																								</td>
 																							</tr>
 																							<tr>
-																								<td width="15" valign="top" style="font-size:12px; color:#555; line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44">3.</td>
+																								<td width="15" valign="top" style="font-size:12px; color:#555; line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44">${open3n}.</td>
 																								<td width="270" valign="top" style="line-height:18px; padding:2px 0px 15px 0px; font-family:'나눔고딕',NanumGothic,Sans-serif;" height="44"><a href="${open3_url}" style="font-size:12px; text-decoration:none;" target="_blank">
 																										<span style="color:#555;">${open3}<br>${open3_dr}
 																										</span>
