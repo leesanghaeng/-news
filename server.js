@@ -107,6 +107,10 @@ var app = http.createServer(function (request, response) {
 document.getElementById('clickableDiv1').addEventListener('click', function() {
     document.getElementById('openT1').style.display = "none";  // Input 필드 비활성화
     document.getElementById('open1n').value = "";  // Input 필드 비활성화
+    document.getElementById('open1').value = "";  // Input 필드 비활성화
+    document.getElementById('open1_url').value = "";  // Input 필드 비활성화
+    document.getElementById('open1_dr').value = "";  // Input 필드 비활성화
+
 
 });
 document.getElementById('clickableDiv2').addEventListener('click', function() {
