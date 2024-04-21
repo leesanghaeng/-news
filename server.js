@@ -36,8 +36,9 @@ var app = http.createServer(function (request, response) {
         <hr>
         <p>공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></p>
         <p>공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></p>
-        <p id = "openT3"><input type="text" name="open3n" id="open3n"  value ="3." style="width: 10px;">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)"></p>
-        <div id="clickableDiv" style="cursor: pointer; padding: 10px; background-color: lightblue; width: 200px; text-align: center;"> 삭제 <div>
+        <p id = "openT3"><input type="text" name="open3n" id="open3n"  value ="3." style="width: 10px;">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)">
+	   <div id="clickableDiv" style="cursor: pointer; padding: 10px; background-color: lightblue; width: 200px; text-align: center;"> 삭제 </div></p>
+     
 	
 	<hr>     
 
