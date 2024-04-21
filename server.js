@@ -37,7 +37,7 @@ var app = http.createServer(function (request, response) {
         <p>공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></p>
         <p>공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></p>
         <p id = "openT3">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)"> </p>
-<div class="clickable-div" id="openNewWindow" onclick="disableElements()">비할성화화</div>
+       <div id="clickableDiv" style="cursor: pointer; padding: 10px; background-color: lightblue; width: 200px; text-align: center;">클릭하여 p 태그 비활성화</div>
 
 	
 	<hr>     
@@ -90,10 +90,16 @@ var app = http.createServer(function (request, response) {
 
 
 <script type="text/javascript">
-function disableElements() {
-    // 입력 필드 비활성화
-    document.getElementById('openT3').disabled = true; // 'Disable Input' 버튼 비활성화
-}
+document.addEventListener("DOMContentLoaded", function() {
+    // div를 클릭하면 p 태그를 비활성화합니다.
+    document.getElementById("clickableDiv").addEventListener("click", function() {
+        var paragraphToDisable = document.getElementById("openT3");
+        openT3.disabled = true; // p 태그를 비활성화합니다.
+        openT3.style.color = "gray"; // 비활성화된 텍스트 색상을 변경합니다.
+    });
+});
+
+
 	document.addEventListener('DOMContentLoaded', function () {
     var today = new Date();
     var year = today.getFullYear(); // 년도
