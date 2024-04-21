@@ -46,10 +46,12 @@ var app = http.createServer(function (request, response) {
         <p>공지4 제목<input type="text" name="notice4" placeholder="title" id = "notice4_title" value =""> URL <input type="text" name="notice4_url" placeholder="title" id = "notice4_url" value =""></p>
         
         <hr>
-        <div class="content-div" id = "openT1"><input type="text" name="open3n" id="open3n"  value ="1." style="width: 10px;">공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></div>
-        <div class="content-div" id = "openT2"><input type="text" name="open3n" id="open3n"  value ="2." style="width: 10px;">공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></div>
+        <div class="content-div" id = "openT1"><input type="text" name="open3n" id="open3n"  value ="1." style="width: 10px;">공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value ="">
+	<div id="clickableDiv1"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제</div></div>
+        <div class="content-div" id = "openT2"><input type="text" name="open3n" id="open3n"  value ="2." style="width: 10px;">공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)">
+	<div id="clickableDiv2"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제</div></div>
         <div class="content-div" id = "openT3"><input type="text" name="open3n" id="open3n"  value ="3." style="width: 10px;">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)">
-	   <div id="clickableDiv"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제</div> </div>
+	   <div id="clickableDiv3"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제</div> </div>
      
 	
 	<hr>     
@@ -102,7 +104,17 @@ var app = http.createServer(function (request, response) {
 
 
 <script type="text/javascript">
-document.getElementById('clickableDiv').addEventListener('click', function() {
+document.getElementById('clickableDiv1').addEventListener('click', function() {
+    document.getElementById('openT1').style.display = "none";  // Input 필드 비활성화
+    document.getElementById('open1n').value = "";  // Input 필드 비활성화
+
+});
+document.getElementById('clickableDiv2').addEventListener('click', function() {
+    document.getElementById('openT2').style.display = "none";  // Input 필드 비활성화
+    document.getElementById('open2n').value = "";  // Input 필드 비활성화
+
+});
+document.getElementById('clickableDiv3').addEventListener('click', function() {
     document.getElementById('openT3').style.display = "none";  // Input 필드 비활성화
     document.getElementById('open3n').value = "";  // Input 필드 비활성화
 
