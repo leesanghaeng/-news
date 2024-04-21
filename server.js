@@ -16,9 +16,16 @@ var app = http.createServer(function (request, response) {
       <title>Club News HTML생성기(2024.4.12)</title>
       <meta charset="utf-8">
       <style>
-    .inline-div {
-        display: inline; /* div를 인라인 요소로 변경 */
-    }
+        .inline-div {
+            display: inline; /* div를 인라인 요소로 변경 */
+            cursor: pointer;  /* 클릭 가능한 요소임을 나타내기 위해 커서 변경 */
+            background-color: lightblue; /* 배경색 설정 */
+            width: 50px; /* 너비 설정 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+        }
+        .content-div {
+            margin-bottom: 10px; /* 하단 마진 설정 */
+        }
 </style>
     </head>
     <body>
@@ -39,10 +46,10 @@ var app = http.createServer(function (request, response) {
         <p>공지4 제목<input type="text" name="notice4" placeholder="title" id = "notice4_title" value =""> URL <input type="text" name="notice4_url" placeholder="title" id = "notice4_url" value =""></p>
         
         <hr>
-        <p>공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></p>
-        <p>공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></p>
-        <p id = "openT3"><input type="text" name="open3n" id="open3n"  value ="3." style="width: 10px;">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)">
-	   <div id="clickableDiv"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제 </div></p>
+        <div class="content-div">공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" value =""> URL <input type="text" name="open1_url"  id="open1_url" placeholder="title" value =""> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)" value =""></div>
+        <div class="content-div">공개 초안 및 의견조회 2<input type="text" name="open2" id="open2" placeholder="title" value =""> URL <input type="text" name="open2_url"  id="open2_url"placeholder="title"> 기한 <input type="text" name="open2_dr" id="open2_dr" placeholder="(기한: 2023.09.15.)"></div>
+        <div class="content-div" id = "openT3"><input type="text" name="open3n" id="open3n"  value ="3." style="width: 10px;">공개 초안 및 의견조회 3<input type="text" name="open3" id="open3"placeholder="title" value =""> URL <input type="text" name="open3_url"  id="open3_url"placeholder="title"> 기한 <input type="text" name="open3_dr"  id="open3_dr" placeholder="(기한: 2023.09.15.)">
+	   <div id="clickableDiv"  class="inline-div" style="cursor: pointer;  background-color: lightblue; width: 50px; text-align: center;"> 삭제</div>
      
 	
 	<hr>     
