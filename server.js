@@ -90,12 +90,8 @@ var app = http.createServer(function (request, response) {
 
 
 <script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function() {
-    // div를 클릭하면 p 태그를 비활성화합니다.
-    document.getElementById("clickableDiv").addEventListener("click", function() {
-        var paragraphToDisable = document.getElementById("openT3");
-        openT3.style.display = 'none';// p 태그를 비활성화합니다.
-    });
+document.getElementById('clickableDiv').addEventListener('click', function() {
+    document.getElementById('openT3').disabled = true;  // Input 필드 비활성화
 });
 
 
