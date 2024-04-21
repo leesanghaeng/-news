@@ -486,8 +486,6 @@ function jsonfunc5( jsonText5 ) {
       var open1 = post.open1
       var open2 = post.open2
       var open3 = post.open3
-	    console.log(open1)
-	    console.log(open2)
       var open1_url = post.open1_url
       var open2_url = post.open2_url
       var open3_url = post.open3_url
