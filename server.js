@@ -91,7 +91,7 @@ var app = http.createServer(function (request, response) {
 
 <script type="text/javascript">
 document.getElementById('clickableDiv').addEventListener('click', function() {
-    document.getElementById('openT3').disabled = true;  // Input 필드 비활성화
+    document.getElementById('open3n').disabled = true;  // Input 필드 비활성화
 });
 
 
