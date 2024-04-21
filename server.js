@@ -116,11 +116,17 @@ document.getElementById('clickableDiv1').addEventListener('click', function() {
 document.getElementById('clickableDiv2').addEventListener('click', function() {
     document.getElementById('openT2').style.display = "none";  // Input 필드 비활성화
     document.getElementById('open2n').value = "";  // Input 필드 비활성화
+    document.getElementById('open2').value = "";  // Input 필드 비활성화
+    document.getElementById('open2_url').value = "";  // Input 필드 비활성화
+    document.getElementById('open2_dr').value = "";  // Input 필드 비활성화
 
 });
 document.getElementById('clickableDiv3').addEventListener('click', function() {
     document.getElementById('openT3').style.display = "none";  // Input 필드 비활성화
     document.getElementById('open3n').value = "";  // Input 필드 비활성화
+    document.getElementById('open3').value = "";  // Input 필드 비활성화
+    document.getElementById('open3_url').value = "";  // Input 필드 비활성화
+    document.getElementById('open3_dr').value = "";  // Input 필드 비활성화
 
 });
 
