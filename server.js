@@ -104,7 +104,7 @@ var app = http.createServer(function (request, response) {
       </form>
 
 
-<script src="mainSc.js"></script>
+<script src="/mainSc.js"></script>
 
     </body>
     </html>
