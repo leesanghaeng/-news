@@ -1,4 +1,4 @@
-const myModule = require('mainSc.js');
+
 var http = require('http');
 var url = require('url');
 var qs = require('querystring');
