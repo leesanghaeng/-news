@@ -410,19 +410,19 @@ function jsonfunc5( jsonText5 ) {
 	let open1_date = json5[0]['date'];
 	let open1_url= json5[0]['ref'];
 		document.getElementById('open1').value = open1_title
-		document.getElementById('open1_dr').value = "("+open1_date+")"
+		document.getElementById('open1_dr').value = "(기한: "+open1_date+")"
 		document.getElementById('open1_url').value = open1_url
 	let open2_title = json5[1]['title'];
 	let open2_date = json5[1]['date'];
 	let open2_url= json5[1]['ref'];
 		document.getElementById('open2').value = open2_title
-		document.getElementById('open2_dr').value = "("+open2_date+")"
+		document.getElementById('open2_dr').value = "(기한: "+open2_date+")"
 		document.getElementById('open2_url').value = open2_url
 	let open3_title = json5[2]['title'];
 	let open3_date = json5[2]['date'];
 	let open3_url= json5[2]['ref'];
 		document.getElementById('open3').value = open3_title
-		document.getElementById('open3_dr').value = "("+open3_date+")"
+		document.getElementById('open3_dr').value = "(기한: "+open3_date+")"
 		document.getElementById('open3_url').value = open3_url
 	//        <p>공개 초안 및 의견조회 1<input type="text" name="open1" id="open1" placeholder="title" > URL <input type="text" name="open1_url"  id="open1_url" placeholder="title"> 기한 <input type="text" name="open1_dr" id="open1_dr" placeholder="(기한: 2023.09.15.)"></p>
 	}
